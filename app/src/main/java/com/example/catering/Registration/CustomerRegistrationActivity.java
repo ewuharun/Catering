@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.widget.Spinner;
 
 import com.example.catering.R;
+import com.example.catering.Registration.Model.Area;
+import com.example.catering.Registration.Model.Thana;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
@@ -27,6 +29,9 @@ public class CustomerRegistrationActivity extends AppCompatActivity {
         getThanaList();
         getAreaList();
 
+    }
+
+    private void getAreaList() {
     }
 
     private void initVariable() {
