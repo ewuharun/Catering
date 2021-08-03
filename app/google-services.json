@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "305066454310",
+    "project_id": "catering-service-ddcc7",
+    "storage_bucket": "catering-service-ddcc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305066454310:android:3512dcee742933897165e7",
+        "android_client_info": {
+          "package_name": "com.example.catering"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305066454310-iv9ek8o1nuusrfk2c7l6o9hsgf2i6p7f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbFdnXTmzYcWb7x6ByGEyYOMDSkMhTtNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305066454310-iv9ek8o1nuusrfk2c7l6o9hsgf2i6p7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

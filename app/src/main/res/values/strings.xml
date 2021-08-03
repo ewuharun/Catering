@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Catering</string>
+
+    <string-array name="sp_thana">
+        <item>Dhaka</item>
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Jamalpur</item>
+    </string-array>
+
+    <string-array name="sp_area">
+        <item>Sahjadpur</item>
+        <item>Gulshan</item>
+    </string-array>
+</resources>
