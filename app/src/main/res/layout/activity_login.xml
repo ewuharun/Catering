@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
 
-    tools:context=".Registration.RegistrationActivity">
+    tools:context=".Registration.LoginActivity">
 
 
 
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="157dp"
             android:layout_height="75dp"
-            android:text="Registration"
+            android:text="Login"
             android:gravity="center"
             android:textStyle="bold"
             android:fontFamily="@font/italian"
@@ -36,25 +36,26 @@
 
 
         <Button
-            android:id="@+id/btn_signup_email"
+            android:id="@+id/btn_login_email"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
             android:paddingLeft="10dp"
-            android:text="Signup"
+            android:text="Login with email"
             android:textColor="@color/white" />
 
-<!--        <Button-->
-<!--            android:id="@+id/btn_signup_phone"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="30dp"-->
-<!--            android:drawableLeft="@drawable/ic_baseline_local_phone_24"-->
-<!--            android:paddingLeft="10dp"-->
-<!--            android:text="Signup with phone"-->
-<!--            android:textColor="@color/white" />-->
+        <Button
+            android:id="@+id/btn_login_phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+            android:paddingLeft="10dp"
+            android:text="Login with phone"
+            android:textColor="@color/white" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -75,6 +76,7 @@
                 android:layout_width="44dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="7dp"
                 android:text="OR"
                 android:textAlignment="center"
                 android:textColor="@color/black"
@@ -90,13 +92,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:paddingLeft="10dp"
-            android:text="Login"
+            android:text="Register"
             android:textColor="@color/white" />
 
     </LinearLayout>

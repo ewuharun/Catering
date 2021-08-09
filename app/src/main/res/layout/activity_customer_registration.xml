@@ -52,6 +52,25 @@
 
 
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/phoneEt"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone"
+                    android:inputType="phone" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordLayout"
@@ -157,7 +176,7 @@
 
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_register"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="15dp"
@@ -199,20 +218,6 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="SignIn with"
-                android:textAlignment="center"
-                android:textColor="#FA3E03"
-                android:textSize="18dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/button"
-                app:layout_constraintVertical_bias="0.247" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -222,22 +227,11 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btn_email"
-                    android:layout_width="95dp"
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="Email"
-                    android:layout_marginRight="30dp"
-                    android:textColor="@color/white" />
-
-                <Button
-                    android:id="@+id/btn_phone"
-                    android:layout_width="97dp"
-                    android:layout_height="wrap_content"
-                    android:drawablePadding="5dp"
-                    android:padding="10dp"
-                    android:layout_marginLeft="30dp"
-                    android:text="Phone"
+                    android:text="Login"
                     android:textColor="@color/white" />
 
             </LinearLayout>

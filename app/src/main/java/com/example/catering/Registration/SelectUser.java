@@ -26,7 +26,31 @@ public class SelectUser extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(type.equals("Signup")){
-                    gotoCustomerRegistration();
+                    Intent intent = new Intent(SelectUser.this,CustomerRegistrationActivity.class);
+                    intent.putExtra("Role","customer");
+                    startActivity(intent);
+                }
+            }
+        });
+
+        btn_cheff.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(type.equals("Signup")){
+                    Intent intent = new Intent(SelectUser.this,CustomerRegistrationActivity.class);
+                    intent.putExtra("Role","cheff");
+                    startActivity(intent);
+                }
+            }
+        });
+
+        btn_delivery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(type.equals("Signup")){
+                    Intent intent = new Intent(SelectUser.this,CustomerRegistrationActivity.class);
+                    intent.putExtra("Role","delivery_man");
+                    startActivity(intent);
                 }
             }
         });
@@ -34,10 +58,7 @@ public class SelectUser extends AppCompatActivity {
 
     }
 
-    private void gotoCustomerRegistration() {
-        Intent intent = new Intent(SelectUser.this,CustomerRegistrationActivity.class);
-        startActivity(intent);
-    }
+
 
     private void initView() {
         btn_cheff = findViewById(R.id.btn_cheff);

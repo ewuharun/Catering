@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "305066454310",
+    "firebase_url": "https://catering-service-ddcc7-default-rtdb.firebaseio.com",
     "project_id": "catering-service-ddcc7",
     "storage_bucket": "catering-service-ddcc7.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "305066454310-77iitrucdiig75ngqj5mdhl0dhqofpbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.catering",
+            "certificate_hash": "c58592b802cb70ddf7c64fe0bc0631db24835d5b"
+          }
+        },
         {
           "client_id": "305066454310-iv9ek8o1nuusrfk2c7l6o9hsgf2i6p7f.apps.googleusercontent.com",
           "client_type": 3
