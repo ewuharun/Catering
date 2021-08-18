@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.catering.Customer.CustomerMainActivity;
 import com.example.catering.MainActivity;
 import com.example.catering.R;
+import com.example.catering.Utils.SessionManager;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskExecutors;
@@ -35,6 +36,7 @@ public class SendOtpActivity extends AppCompatActivity {
     String phonenumber;
     EditText entercode;
     String role;
+    private SessionManager sessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class SendOtpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_send_otp);
 
         initView();
+
+        initVariable();
 
         role = getIntent().getStringExtra("Role");
         phonenumber = getIntent().getStringExtra("phoneNumber").trim();
@@ -108,6 +112,10 @@ public class SendOtpActivity extends AppCompatActivity {
 
     }
 
+    private void initVariable() {
+        sessionManager = new SessionManager(getApplicationContext());
+    }
+
     private void initView() {
 
 
@@ -140,6 +148,7 @@ public class SendOtpActivity extends AppCompatActivity {
                             if (task.isSuccessful()) {
 
                                 if(role.equals("customer")){
+                                    sessionManager.createUserLoginSession();
                                     Intent intent = new Intent(SendOtpActivity.this, CustomerMainActivity.class);
                                     startActivity(intent);
                                     finish();

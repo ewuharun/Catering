@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/drawable/txt_curve_background.xml" value="0.11458333333333333" />
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_customer_main.xml" value="0.17708333333333334" />
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_customer_registration.xml" value="0.12182971014492754" />
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_login.xml" value="0.17916666666666667" />
@@ -11,6 +12,15 @@
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_select_user.xml" value="0.12182971014492754" />
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_send_otp.xml" value="0.153125" />
         <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/activity_verify_phone.xml" value="0.12182971014492754" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/fragment_customer_cart.xml" value="0.21041666666666667" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/fragment_customer_home.xml" value="0.176" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/fragment_customer_order.xml" value="0.19635416666666666" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/fragment_customer_profile.xml" value="0.19635416666666666" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/fragment_customer_track.xml" value="0.21041666666666667" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/item_category_listxml.xml" value="0.16927083333333334" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/layout/main_toolbar.xml" value="0.4" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/menu/customer_bottom_navigation.xml" value="0.4" />
+        <entry key="..\:/PersonalProject/Catering/app/src/main/res/menu/main_drawer_view.xml" value="0.264" />
       </map>
     </option>
   </component>

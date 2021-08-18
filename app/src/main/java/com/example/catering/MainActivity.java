@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.catering.Customer.CustomerMainActivity;
 import com.example.catering.Registration.RegistrationActivity;
+import com.example.catering.Utils.SessionManager;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth fAuth;
     private FirebaseDatabase fDatabase;
     private DatabaseReference fRef;
+    private SessionManager sessionManager;
 
 
 
@@ -29,15 +32,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initView();
+        initVariable();
         animateLogo();
 
-        String hasUser = "noUser";
+        boolean hasUser = sessionManager.isUserLoggedIn();
 
-        if(hasUser.equals("hasUser")){
-
+        if(hasUser){
+            gotoCustomerMainActivity();
         }else{
             gotoRegistrationPage();
         }
+    }
+
+    private void gotoCustomerMainActivity() {
+        Intent intent = new Intent(MainActivity.this, CustomerMainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    private void initVariable() {
+        sessionManager = new SessionManager(getApplicationContext());
     }
 
     private void gotoRegistrationPage() {
